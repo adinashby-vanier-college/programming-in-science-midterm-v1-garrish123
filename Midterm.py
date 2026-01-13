@@ -14,7 +14,13 @@ def hollow_right_triangle(n):
     for i in range(1, n + 1): 
         if i == 1: 
             result.append("*")
-        # 
+        elif i == n: 
+            result.append("*" * n)
+        else:
+            result.append("*" + " " * (i - 2) + "*")
+
+    return "\n".join(result) 
+
         
 
 # Q3: Inverted Pyramid
